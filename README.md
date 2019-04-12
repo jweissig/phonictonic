@@ -7,6 +7,7 @@ In this three part episode series, we will be building an end to end, state of t
 We will walk through fixing these issues together over the next few episodes:
 
 * hardcoded mysql password (k8s secrets)
+* hardcoded admin ip (k8s env)
 * hardcoded rabbitmq password & ip address (k8s env)
 * hardcoded project names (k8s env)
 * hardcoded storage bucket (k8s env)
