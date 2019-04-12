@@ -23,5 +23,8 @@ We will walk through fixing these issues together over the next few episodes:
 * needs cache (arch planning, redis, etc)
 * learn limits via load testing
 * budget planning for diff load levels
+* does not work with non-english text (db schema)
 
 Please check out my site, [Sysadmin Casts](https://sysadmincasts.com/), if any of this sound interesting.
+
+Use at your own risk.
