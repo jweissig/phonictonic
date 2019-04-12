@@ -13,7 +13,11 @@ We will walk through fixing these issues together over the next few episodes:
 * hardcoded rabbitmq password & ip address (k8s env)
 * hardcoded project names (k8s env)
 * hardcoded storage bucket (k8s env)
-* no monitoring, logging, or alerting (devops tooling)
-* needs cache (arch planning, load testing, redis, etc)
+* no monitoring (devops tooling)
+* no logging (devops tooling)
+* no alerting (devops tooling)
+* needs cache (arch planning, redis, etc)
+* learn limits via load testing
+* budget planning for diff load levels
 
 Please check out my site, [Sysadmin Casts](https://sysadmincasts.com/), if any of this sound interesting.
