@@ -1,0 +1,9 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/ffmpeg:$SHORT_SHA", "."]
+    id: "docker-build"
+
+# takes about 50 minutes to build
+timeout: 3600s
+
+images: ["gcr.io/$PROJECT_ID/ffmpeg:$SHORT_SHA"]

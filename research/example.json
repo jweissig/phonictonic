@@ -1,0 +1,1083 @@
+{
+  "results": [
+    {
+      "alternatives": [
+        {
+          "transcript": "Everything is going here. We're just waiting for the cabin pleasures of lethal pressure to open the hatch. It's about point one on our gate count. Anil is a hairstylist.",
+          "confidence": 0.87371856,
+          "words": [
+            {
+              "start_time": {},
+              "end_time": {
+                "seconds": 1,
+                "nanos": 700000000
+              },
+              "word": "Everything",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 1,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 1,
+                "nanos": 900000000
+              },
+              "word": "is",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 1,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 200000000
+              },
+              "word": "going",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 400000000
+              },
+              "word": "here.",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 600000000
+              },
+              "word": "We're",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 700000000
+              },
+              "word": "just",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 3,
+                "nanos": 200000000
+              },
+              "word": "waiting",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 3,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 3,
+                "nanos": 300000000
+              },
+              "word": "for",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 3,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 3,
+                "nanos": 600000000
+              },
+              "word": "the",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 3,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 4,
+                "nanos": 800000000
+              },
+              "word": "cabin",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 4,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "word": "pleasures",
+              "confidence": 0.89959466
+            },
+            {
+              "start_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "word": "of",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 5,
+                "nanos": 800000000
+              },
+              "word": "lethal",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 5,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 8
+              },
+              "word": "pressure",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 8
+              },
+              "end_time": {
+                "seconds": 8,
+                "nanos": 300000000
+              },
+              "word": "to",
+              "confidence": 0.7827926
+            },
+            {
+              "start_time": {
+                "seconds": 8,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 8,
+                "nanos": 900000000
+              },
+              "word": "open",
+              "confidence": 0.7827922
+            },
+            {
+              "start_time": {
+                "seconds": 8,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 9,
+                "nanos": 200000000
+              },
+              "word": "the",
+              "confidence": 0.78279245
+            },
+            {
+              "start_time": {
+                "seconds": 9,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 9,
+                "nanos": 300000000
+              },
+              "word": "hatch.",
+              "confidence": 0.7827922
+            },
+            {
+              "start_time": {
+                "seconds": 9,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 9,
+                "nanos": 700000000
+              },
+              "word": "It's",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 9,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 10
+              },
+              "word": "about",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 10
+              },
+              "end_time": {
+                "seconds": 10,
+                "nanos": 400000000
+              },
+              "word": "point",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 10,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 10,
+                "nanos": 600000000
+              },
+              "word": "one",
+              "confidence": 0.87247646
+            },
+            {
+              "start_time": {
+                "seconds": 10,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 10,
+                "nanos": 900000000
+              },
+              "word": "on",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 10,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 11
+              },
+              "word": "our",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 11
+              },
+              "end_time": {
+                "seconds": 11,
+                "nanos": 400000000
+              },
+              "word": "gate",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 11,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 11,
+                "nanos": 600000000
+              },
+              "word": "count.",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 11,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 100000000
+              },
+              "word": "Anil",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 14,
+                "nanos": 100000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 200000000
+              },
+              "word": "is",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 14,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 300000000
+              },
+              "word": "a",
+              "confidence": 0.9128386
+            },
+            {
+              "start_time": {
+                "seconds": 14,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 900000000
+              },
+              "word": "hairstylist.",
+              "confidence": 0.6796955
+            }
+          ]
+        }
+      ],
+      "language_code": "en-us"
+    },
+    {
+      "alternatives": [
+        {
+          "transcript": " We're showing a relatively static pressure on your cabin. Do you think you can open the hatch at this pressure about the point 1 2?",
+          "confidence": 0.8802031,
+          "words": [
+            {
+              "start_time": {},
+              "end_time": {
+                "seconds": 1,
+                "nanos": 700000000
+              },
+              "word": "Everything",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 1,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 1,
+                "nanos": 900000000
+              },
+              "word": "is",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 1,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 200000000
+              },
+              "word": "going",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 400000000
+              },
+              "word": "here.",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 600000000
+              },
+              "word": "We're",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 2,
+                "nanos": 700000000
+              },
+              "word": "just",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 2,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 3,
+                "nanos": 200000000
+              },
+              "word": "waiting",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 3,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 3,
+                "nanos": 300000000
+              },
+              "word": "for",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 3,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 3,
+                "nanos": 600000000
+              },
+              "word": "the",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 3,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 4,
+                "nanos": 800000000
+              },
+              "word": "cabin",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 4,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "word": "pleasures",
+              "confidence": 0.89959466,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "word": "of",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 5,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 5,
+                "nanos": 800000000
+              },
+              "word": "lethal",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 5,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 8
+              },
+              "word": "pressure",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 8
+              },
+              "end_time": {
+                "seconds": 8,
+                "nanos": 300000000
+              },
+              "word": "to",
+              "confidence": 0.7827926,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 8,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 8,
+                "nanos": 900000000
+              },
+              "word": "open",
+              "confidence": 0.7827922,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 8,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 9,
+                "nanos": 200000000
+              },
+              "word": "the",
+              "confidence": 0.78279245,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 9,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 9,
+                "nanos": 300000000
+              },
+              "word": "hatch.",
+              "confidence": 0.7827922,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 9,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 9,
+                "nanos": 700000000
+              },
+              "word": "It's",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 9,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 10
+              },
+              "word": "about",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 10
+              },
+              "end_time": {
+                "seconds": 10,
+                "nanos": 400000000
+              },
+              "word": "point",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 10,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 10,
+                "nanos": 600000000
+              },
+              "word": "one",
+              "confidence": 0.87247646,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 10,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 10,
+                "nanos": 900000000
+              },
+              "word": "on",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 10,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 11
+              },
+              "word": "our",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 11
+              },
+              "end_time": {
+                "seconds": 11,
+                "nanos": 400000000
+              },
+              "word": "gate",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 11,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 11,
+                "nanos": 600000000
+              },
+              "word": "count.",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 11,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 100000000
+              },
+              "word": "Anil",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 14,
+                "nanos": 100000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 200000000
+              },
+              "word": "is",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 14,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 300000000
+              },
+              "word": "a",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 14,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 14,
+                "nanos": 900000000
+              },
+              "word": "hairstylist.",
+              "confidence": 0.6796955,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 18,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 21,
+                "nanos": 400000000
+              },
+              "word": "We're",
+              "confidence": 0.9097916,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 21,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 21,
+                "nanos": 600000000
+              },
+              "word": "showing",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 21,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 21,
+                "nanos": 800000000
+              },
+              "word": "a",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 21,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 22,
+                "nanos": 200000000
+              },
+              "word": "relatively",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 22,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 22,
+                "nanos": 700000000
+              },
+              "word": "static",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 22,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 23,
+                "nanos": 300000000
+              },
+              "word": "pressure",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 23,
+                "nanos": 300000000
+              },
+              "end_time": {
+                "seconds": 23,
+                "nanos": 800000000
+              },
+              "word": "on",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 23,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 23,
+                "nanos": 900000000
+              },
+              "word": "your",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 23,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 24,
+                "nanos": 400000000
+              },
+              "word": "cabin.",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 24,
+                "nanos": 500000000
+              },
+              "end_time": {
+                "seconds": 25,
+                "nanos": 400000000
+              },
+              "word": "Do",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 25,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 25,
+                "nanos": 500000000
+              },
+              "word": "you",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 25,
+                "nanos": 500000000
+              },
+              "end_time": {
+                "seconds": 25,
+                "nanos": 600000000
+              },
+              "word": "think",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 25,
+                "nanos": 600000000
+              },
+              "end_time": {
+                "seconds": 25,
+                "nanos": 800000000
+              },
+              "word": "you",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 25,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 25,
+                "nanos": 900000000
+              },
+              "word": "can",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 25,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 26,
+                "nanos": 200000000
+              },
+              "word": "open",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 26,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 26,
+                "nanos": 400000000
+              },
+              "word": "the",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 26,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 26,
+                "nanos": 500000000
+              },
+              "word": "hatch",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 26,
+                "nanos": 500000000
+              },
+              "end_time": {
+                "seconds": 26,
+                "nanos": 800000000
+              },
+              "word": "at",
+              "confidence": 0.8052844,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 26,
+                "nanos": 800000000
+              },
+              "end_time": {
+                "seconds": 26,
+                "nanos": 900000000
+              },
+              "word": "this",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 26,
+                "nanos": 900000000
+              },
+              "end_time": {
+                "seconds": 27,
+                "nanos": 200000000
+              },
+              "word": "pressure",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 27,
+                "nanos": 200000000
+              },
+              "end_time": {
+                "seconds": 27,
+                "nanos": 400000000
+              },
+              "word": "about",
+              "confidence": 0.8635599,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 27,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 27,
+                "nanos": 700000000
+              },
+              "word": "the",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 27,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 28,
+                "nanos": 400000000
+              },
+              "word": "point",
+              "confidence": 0.9128386,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 28,
+                "nanos": 400000000
+              },
+              "end_time": {
+                "seconds": 28,
+                "nanos": 700000000
+              },
+              "word": "1",
+              "confidence": 0.5358829,
+              "speaker_tag": 1
+            },
+            {
+              "start_time": {
+                "seconds": 28,
+                "nanos": 700000000
+              },
+              "end_time": {
+                "seconds": 28,
+                "nanos": 700000000
+              },
+              "word": "2?",
+              "confidence": 0.5358829,
+              "speaker_tag": 1
+            }
+          ]
+        }
+      ],
+      "language_code": "en-us"
+    }
+  ]
+}
