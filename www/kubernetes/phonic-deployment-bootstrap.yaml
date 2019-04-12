@@ -1,0 +1,84 @@
+# bootstrap application
+# - make sure sql, rabbit, and both secrets exist before running
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: phonic-www-prod
+  labels:
+    app: phonic-www-prod
+  namespace: default
+spec:
+  template:
+    metadata:
+      labels:
+        app: phonic-www-prod
+    spec:
+      containers:
+      - image: gcr.io/phonic-tonic/phonic-www-prod:latest
+        imagePullPolicy: IfNotPresent
+        name: phonic-www-prod
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        ports:
+        - containerPort: 8081
+          protocol: TCP
+        volumeMounts:
+        - name: gcs-upload-key
+          mountPath: /var/secrets/gcs-upload-key
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /var/secrets/gcs-upload-key/key.json
+      - name: cloudsql-proxy
+        image: gcr.io/cloudsql-docker/gce-proxy:1.11
+        imagePullPolicy: IfNotPresent
+        command: ["/cloud_sql_proxy",
+                  "-instances=phonic-tonic:us-west1:phonic-test-sql=tcp:3306",
+                  "-credential_file=/secrets/cloudsql/credentials.json"]
+        resources: {}
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsUser: 2
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /secrets/cloudsql
+          name: cloudsql-instance-credentials
+          readOnly: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: cloudsql-instance-credentials
+        secret:
+          defaultMode: 420
+          secretName: cloudsql-instance-credentials
+      - name: gcs-upload-key
+        secret:
+          secretName: gcs-upload-key
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: phonic-www-prod
+  labels:
+    app: phonic-www-prod
+spec:
+  type: NodePort
+  ports:
+  - port: 8081
+    protocol: TCP
+    targetPort: 8081
+  selector:
+    app: phonic-www-prod
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: phonic-www-prod-ingress
+spec:
+  backend:
+    serviceName: phonic-www-prod
+    servicePort: 8081

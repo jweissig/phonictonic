@@ -1,0 +1,33 @@
+{{ define "content" }}
+
+<h1 class="mt-1">Jobs</h1>
+
+<table class="table table-sm table-striped">
+    <thead class="thead-darkd">
+        <tr>
+            <th scope="col">Job</th>
+            <th scope="col">Email</th>
+            <th scope="col">Files</th>
+            <th scope="col">API Cost</th>
+            <th scope="col">Total Duration</th>
+            <th scope="col">Total Size</th>
+            <th scope="col">Created</th>
+        </tr>
+    </thead>
+
+    <tbody>
+      {{ range .Jobs }}
+        <tr>
+            <td><a href="/admin/{{ .JobUUID }}">{{ .JobUUID }}</a></td>
+            <td>{{ .Email }}</td>
+            <td>{{ .TasksCount }}</td>
+            <td>{{ .JobCost }}</td>
+            <td>{{ .TasksTotalDurationSeconds }}</td>
+            <td>{{ .TasksTotalFilesize }}</td>
+            <td>{{ .CreatedAt | myTruncateDate }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+</table>
+
+{{ end }}

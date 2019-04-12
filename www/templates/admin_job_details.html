@@ -1,0 +1,42 @@
+{{ define "content" }}
+
+<h1 class="mt-1">Job - {{ .Job.JobUUID }}</h1>
+
+<p>
+    Email: {{ .Job.Email }}<br>
+    Files: {{ .Job.TasksCount }}<br>
+    Total Duration: {{ .Job.TasksTotalDurationSeconds }}<br>
+    Total Size: {{ .Job.TasksTotalFilesize }}<br>
+    API Cost: {{ .Job.JobCost }}<br>
+</p>
+
+
+<table class="table table-sm table-striped">
+    <thead class="thead-darkd">
+        <tr>
+            <th scope="col">Task</th>
+            <th scope="col">Filename</th>
+            <th scope="col">API Cost</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Size</th>
+            <th scope="col">Format</th>
+            <th scope="col">Created</th>
+        </tr>
+    </thead>
+
+    <tbody>
+      {{ range .Tasks }}
+        <tr>
+            <td>{{ .TaskUUID }}</td>
+            <td>{{ .Filename }}</td>
+            <td>{{ .TaskCost }}</td>
+            <td>{{ .DurationSecondsString }}</td>
+            <td>{{ .FilesizeString }}</td>
+            <td>{{ .FormatName }}</td>
+            <td>{{ .CreatedAt | myTruncateDate }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+</table>
+
+{{ end }}

@@ -1,0 +1,78 @@
+{{ define "content" }}
+
+  <div class="upload-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Phonic Tonic</h1>
+    <p class="lead">Quickly Transcribe Audio to Text</p>
+    <p class="lead">Enter your email address, drag over your files, then click "Submit Job For Processing".</p>
+  </div>
+
+  {{ if .Errors }}
+
+  <div class="alert alert-danger" role="alert">
+    <p>Please fix the following errors:</p>
+    <hr>
+    <p class="mb-0"><ul>
+        {{ range .Errors }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul></p>
+  </div>
+
+  {{ end }}
+
+  <form action="/" method="POST" class="form-group" id="theForm">
+    <input type="hidden" name="job" value="{{.Job}}">
+    <div class="text-center"><input class="form-control form-control-lg text-center" type="text" name="email" size="30" placeholder="jane@example.com" autofocus></div>
+  </form>
+
+  <form action="/upload" class="dropzone form-group" id="my-awesome-dropzone" style="margin-top:10px;">
+    <input type="hidden" name="job" value="{{.Job}}">
+    <div class="dz-message needsclick">
+      Drop audio files here or click to upload.<br>
+      <span class="note needsclick">Supports both Audio and Video files (mp3, wav, mp4, mov, etc).</span>
+    </div>
+  </form>
+
+  <div class="form-group">
+    <p class="text-center mt-3">Site for educational use only. Use at your own risk. Transcripts are capped at 30 seconds per file.</p>
+    <div class="text-center"><button onclick="theForm.submit();" type="submit" class="btn btn-success form-control-lg">Submit Job For Processing</button></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/dropzone.js"></script>
+  <link rel="stylesheet" href="/assets/dropzone.css">
+
+  <script type="text/javascript">
+
+    // The recommended way from within the init configuration:
+    Dropzone.options.myAwesomeDropzone = {
+      maxFilesize: 1024, // MB
+      timeout: 600000, //10m
+      addRemoveLinks: true,
+      removedfile: function(file) {
+        var name = file.name;
+        $.ajax({
+          type: 'POST',
+          url: '/delete',
+          data: {name: name,request: 2},
+          sucess: function(data){
+            console.log('success: ' + data);
+          }
+        });
+        var _ref;
+        return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+      },
+      init: function() {
+        addRemoveLinks: true
+
+        // testing adding files (error handeling)
+        {{ range .Tasks -}}
+        var f{{- unescapeJS .ID }} = { name: "{{ .Filename }}", size: 12345 };
+        this.options.addedfile.call(this, f{{- unescapeJS .ID -}});
+        f{{- unescapeJS .ID -}}.previewElement.classList.add('dz-complete');
+        {{ end }}
+      },
+    };
+  </script>
+
+{{ end }}

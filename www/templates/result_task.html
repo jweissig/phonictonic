@@ -1,0 +1,42 @@
+{{ define "content" }}
+
+<nav aria-label="breadcrumb" class="mt-3">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Phonic Tonic</a></li>
+    <li class="breadcrumb-item"><a href="/result/{{ .Job.JobUUID }}">Your Results</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ .Task.Filename }}</li>
+  </ol>
+</nav>
+
+<h2 class="mt-3">Results for {{ .Task.Filename }}</h2>
+
+<p class="ml-1">
+    Status: {{ .Task.Status }}<br>
+    Duration: {{ .Task.DurationSecondsString }}<br>
+    Size: {{ .Task.FilesizeString }}<br>
+    Created On: {{ .Task.CreatedAt | myTruncateDate }}<br>
+</p>
+
+<h5>File Transcript</h5>
+
+<textarea name="transcript" class="form-control form-control-lg" rows="12" spellcheck="false" >{{ .Transcript }}</textarea>
+
+<p><a href="#" onclick="myFunction();">toogle debug</a></p>
+
+<div id="debug" style="display:none;">
+  <h5>JSON debug data</h5>
+  <textarea name="task" class="form-control form-control-lg" rows="8" spellcheck="false" >{{ .PrettyJSON }}</textarea>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("debug");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+{{ end }}
