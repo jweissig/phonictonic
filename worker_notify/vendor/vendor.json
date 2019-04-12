@@ -1,0 +1,37 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "QD6LqgLz2JMxXqns8TaxtK9AuHs=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "2e00b5cd70399450106cec6431c2e2ce3cae5034",
+			"revisionTime": "2016-12-24T12:10:19Z"
+		},
+		{
+			"checksumSHA1": "2h3kUb8S+JEW9rCSK3rGag4y98g=",
+			"path": "github.com/jinzhu/gorm",
+			"revision": "1819dda80ab0963da3ec38f484264c1cab543786",
+			"revisionTime": "2016-03-10T09:38:52Z"
+		},
+		{
+			"checksumSHA1": "eECxSkwh0WmhLwaxHfkvcLOWS08=",
+			"path": "github.com/jinzhu/gorm/dialects/mysql",
+			"revision": "1819dda80ab0963da3ec38f484264c1cab543786",
+			"revisionTime": "2016-03-10T09:38:52Z"
+		},
+		{
+			"checksumSHA1": "9Fb+a7sS7os6y+72DjHAVegPBwY=",
+			"path": "github.com/jinzhu/inflection",
+			"revision": "3272df6c21d04180007eb3349844c89a3856bc25",
+			"revisionTime": "2015-10-09T08:41:29Z"
+		},
+		{
+			"checksumSHA1": "qik08F9+tO3aD/VsiPY19IbmT7k=",
+			"path": "github.com/streadway/amqp",
+			"revision": "63795daa9a446c920826655f26ba31c81c860fd6",
+			"revisionTime": "2016-12-24T08:20:40Z"
+		}
+	],
+	"rootPath": "learning-golang/phonic-tonic/worker_notify"
+}

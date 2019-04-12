@@ -1,0 +1,57 @@
+# bootstrap application
+# - make sure sql, rabbit, and both secrets exist before running
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: phonic-notify-prod
+  labels:
+    app: phonic-notify-prod
+  namespace: default
+spec:
+  template:
+    metadata:
+      labels:
+        app: phonic-notify-prod
+    spec:
+      containers:
+      - image: gcr.io/phonic-tonic/phonic-notify-prod:latest
+        imagePullPolicy: IfNotPresent
+        name: phonic-notify-prod
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - name: gcs-upload-key
+          mountPath: /var/secrets/gcs-upload-key
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /var/secrets/gcs-upload-key/key.json
+      - name: cloudsql-proxy
+        image: gcr.io/cloudsql-docker/gce-proxy:1.11
+        imagePullPolicy: IfNotPresent
+        command: ["/cloud_sql_proxy",
+                  "-instances=phonic-tonic:us-west1:phonic-test-sql=tcp:3306",
+                  "-credential_file=/secrets/cloudsql/credentials.json"]
+        resources: {}
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsUser: 2
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /secrets/cloudsql
+          name: cloudsql-instance-credentials
+          readOnly: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: cloudsql-instance-credentials
+        secret:
+          defaultMode: 420
+          secretName: cloudsql-instance-credentials
+      - name: gcs-upload-key
+        secret:
+          secretName: gcs-upload-key
